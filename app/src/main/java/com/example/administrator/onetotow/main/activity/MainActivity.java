@@ -1,4 +1,4 @@
-package com.example.administrator.onetotow.activity;
+package com.example.administrator.onetotow.main.activity;
 
 import android.app.Activity;
 import android.os.Bundle;

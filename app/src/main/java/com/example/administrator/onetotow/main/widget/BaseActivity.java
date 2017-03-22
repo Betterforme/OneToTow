@@ -23,6 +23,8 @@ public abstract class BaseActivity extends AppCompatActivity {
         LogUtils.i("BaseActivity", getClass().getSimpleName());
         ButterKnife.bind(this);
         ActivityCollector.addActivity(this);
+        getData();
+        setView();
     }
 
     protected void Toast(String content) {
@@ -30,6 +32,8 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     protected abstract int getLayoutId();
+    public void getData(){}
+    public void setView(){}
 
     @Override
     protected void onDestroy() {

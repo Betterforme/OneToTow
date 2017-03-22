@@ -1,6 +1,7 @@
-package com.example.administrator.onetotow.main;
+package com.example.administrator.onetotow;
 
 import android.app.Application;
+import android.content.Context;
 
 import cn.bmob.v3.Bmob;
 
@@ -8,10 +9,12 @@ import cn.bmob.v3.Bmob;
  * Created by SJ on 2016/11/8.
  */
 
-public class MyApplication extends Application {
+public class App extends Application {
+    public  static Application application;
     @Override
     public void onCreate() {
         super.onCreate();
+        application = this;
         Bmob.initialize(this, "256324b5789d783a4bc0c5af44d84887");
         //第二：自v3.4.7版本开始,设置BmobConfig,允许设置请求超时时间、文件分片上传时每片的大小、文件的过期时间(单位为秒)，
         //BmobConfig config =new BmobConfig.Builder(this)
@@ -25,5 +28,9 @@ public class MyApplication extends Application {
         //.setFileExpiration(2500)
         //.build();
         //Bmob.initialize(config);
+    }
+
+    public static Context getContext(){
+        return application;
     }
 }

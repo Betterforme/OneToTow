@@ -3,7 +3,7 @@ package com.example.administrator.onetotow.main.utils;
 
 import android.content.Context;
 
-import com.example.y.mvp.App;
+import com.example.administrator.onetotow.App;
 
 
 /**

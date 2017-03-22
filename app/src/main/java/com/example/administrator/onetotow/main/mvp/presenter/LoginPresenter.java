@@ -6,4 +6,5 @@ package com.example.administrator.onetotow.main.mvp.presenter;
 
 public interface LoginPresenter {
 
+
 }

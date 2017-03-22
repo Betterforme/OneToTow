@@ -5,5 +5,6 @@ package com.example.administrator.onetotow.main.mvp.view;
 */
 
 public interface LoginView{
-
+    public void loginSuccess();
+    public void loginFailue();
 }

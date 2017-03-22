@@ -8,7 +8,7 @@ public class DDaoGenerator {
     public static void main(String[] args) throws Exception {
         Schema schema = new Schema(3, "greendao");
         addAll(schema);
-        new DaoGenerator().generateAll(schema, "H:\\oneToTow1\\OneToTow\\app\\src\\main\\java-gen\\greendao");
+        new DaoGenerator().generateAll(schema, "E:\\project3\\OneToTow\\app\\src\\main\\java-gen\\greendao");
     }
 
     /**
@@ -17,8 +17,10 @@ public class DDaoGenerator {
    private static void addAll(Schema schema) {
        Entity box = schema.addEntity("User");
        box.addIdProperty();
-       box.addStringProperty("name");
-       box.addStringProperty("secret");
+       box.addStringProperty("objectId");
+       box.addStringProperty("username");
+       box.addStringProperty("password");
+       box.addStringProperty("mobilePhoneNumber");
 
 
 

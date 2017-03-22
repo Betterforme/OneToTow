@@ -4,12 +4,12 @@ package com.example.administrator.onetotow.main.mvp.model;
 import android.util.Log;
 
 import com.example.administrator.onetotow.App;
+import com.example.administrator.onetotow.main.generator.User;
 import com.example.administrator.onetotow.main.mvp.presenter.LoginPresenterImpl;
 
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.LogInListener;
-import greendao.greendao.User;
 
 /**
 * Created by Administrator on 2017/03/22

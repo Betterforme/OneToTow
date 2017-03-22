@@ -1,11 +1,11 @@
 package com.example.administrator.onetotow.main.mvp.presenter;
 
 
+import com.example.administrator.onetotow.main.generator.User;
 import com.example.administrator.onetotow.main.mvp.model.BaseDataBridge;
 import com.example.administrator.onetotow.main.mvp.model.LoginModelImpl;
 import com.example.administrator.onetotow.main.mvp.view.LoginView;
 
-import greendao.greendao.User;
 
 /**
 * Created by Administrator on 2017/03/22
@@ -21,8 +21,8 @@ public class LoginPresenterImpl extends  BasePresenterImpl implements BasePresen
 
 
     @Override
-    public void login(String username, String secret, LoginPresenterImpl loginPresenter) {
-
+    public void login(String username, String secret) {
+        loginModel.login(username,secret,this);
     }
 
     @Override
@@ -33,6 +33,5 @@ public class LoginPresenterImpl extends  BasePresenterImpl implements BasePresen
     @Override
     public void errorData() {
         ((LoginView)view).loginFailue();
-
     }
 }

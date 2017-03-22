@@ -7,6 +7,6 @@ package com.example.administrator.onetotow.main.mvp.presenter;
 public class BasePresenter {
 
     public interface LoginPresenter{
-        void login(String username, String secret, LoginPresenterImpl loginPresenter);
+        void login(String username, String secret);
     }
 }

@@ -4,11 +4,12 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
+import com.example.administrator.onetotow.main.generator.DaoMaster;
+
 import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-import greendao.greendao.DaoMaster;
 
 
 public class SQLiteOpenHelper extends DaoMaster.OpenHelper {

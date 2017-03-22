@@ -1,8 +1,10 @@
 package com.example.administrator.onetotow.main.mvp.model;
 
+
+import com.example.administrator.onetotow.main.generator.User;
+
 import java.util.List;
 
-import greendao.greendao.User;
 
 /**
  * Created by Administrator on 2017/3/22 0022.

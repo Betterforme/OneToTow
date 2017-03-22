@@ -4,17 +4,19 @@ import android.app.Application;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.example.administrator.onetotow.main.constant.Constant;
+import com.example.administrator.onetotow.main.generator.DaoMaster;
+import com.example.administrator.onetotow.main.generator.DaoSession;
 import com.example.administrator.onetotow.main.utils.SQLiteOpenHelper;
 
 import cn.bmob.v3.Bmob;
-import greendao.greendao.DaoMaster;
-import greendao.greendao.DaoSession;
 
 /**
  * Created by SJ on 2016/11/8.
  */
 
 public class App extends Application {
+    Constant constant;
     public  static Application application;
     private SQLiteDatabase db;
     private DaoMaster daoMaster;

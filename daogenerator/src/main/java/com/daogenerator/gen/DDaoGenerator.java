@@ -6,9 +6,9 @@ import de.greenrobot.daogenerator.Schema;
 
 public class DDaoGenerator {
     public static void main(String[] args) throws Exception {
-        Schema schema = new Schema(3, "greendao");
+        Schema schema = new Schema(3, "generator");
         addAll(schema);
-        new DaoGenerator().generateAll(schema, "E:\\project3\\OneToTow\\app\\src\\main\\java-gen\\greendao");
+        new DaoGenerator().generateAll(schema, "E:\\project3\\OneToTow\\app\\src\\main\\java\\com\\example\\administrator\\onetotow\\main");
     }
 
     /**
@@ -16,11 +16,11 @@ public class DDaoGenerator {
      */
    private static void addAll(Schema schema) {
        Entity box = schema.addEntity("User");
-       box.addIdProperty();
-       box.addStringProperty("objectId");
+       box.addStringProperty("objectId").notNull().primaryKey();
        box.addStringProperty("username");
        box.addStringProperty("password");
        box.addStringProperty("mobilePhoneNumber");
+       box.addStringProperty("email");
 
 
 

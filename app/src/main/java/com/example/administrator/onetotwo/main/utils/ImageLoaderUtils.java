@@ -14,11 +14,23 @@ import com.example.administrator.onetotwo.R;
 
 public class ImageLoaderUtils {
 
+    /**
+     * @param imageView
+     * @param url
+     * @param placeholder
+     * @param error
+     * 带占位图的imageview显示
+     */
     public static void display(@NonNull ImageView imageView, @NonNull String url, int placeholder, int error) {
         Glide.with(imageView.getContext()).load(url).placeholder(placeholder)
                 .error(error).crossFade().into(imageView);
     }
 
+    /**
+     * @param imageView
+     * @param url
+     * 无占位图
+     */
     public static void display(@NonNull ImageView imageView, @NonNull Object url) {
         Glide.with(imageView.getContext()).load(url).placeholder(R.mipmap.ic_launcher)
                 .error(R.mipmap.ic_launcher).crossFade().into(imageView);

@@ -90,8 +90,8 @@
                     android:layout_weight="1">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/selector_weixin"
                         android:id="@+id/imgWxLogin"

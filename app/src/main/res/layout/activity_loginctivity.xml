@@ -186,7 +186,7 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@color/baseBlack_purple"/>
+            android:background="@color/base_purple"/>
 
         <RelativeLayout
             android:layout_width="0dp"
@@ -200,10 +200,11 @@
                 android:layout_height="match_parent"
                 android:text="Sign Up!"
                 android:layout_weight="1"
-                android:drawableLeft="@mipmap/ic_learn_more"
+                android:drawableLeft="@mipmap/ic_regist"
                 android:gravity="center"
                 android:drawablePadding="5dp"
-                android:layout_centerInParent="true"/>
+                android:layout_centerInParent="true"
+                android:textColor="@color/baseGreen"/>
 
         </RelativeLayout>
 

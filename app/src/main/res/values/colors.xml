@@ -7,5 +7,6 @@
     <color name="baseWhite">#ffffff</color>
     <color name="baseBlack">#000000</color>
     <color name="baseBlack_7f">#7f000000</color>
+    <color name="baseBlack_purple">#9a7ccf</color>
 
 </resources>

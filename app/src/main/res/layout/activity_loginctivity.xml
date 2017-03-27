@@ -152,7 +152,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="26dp"
-                android:layout_marginBottom="65dp"/>
+                android:layout_marginBottom="88dp"/>
 
         </LinearLayout>
 
@@ -186,7 +186,7 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background=""/>
+            android:background="@color/baseBlack_purple"/>
 
         <RelativeLayout
             android:layout_width="0dp"

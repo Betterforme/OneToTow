@@ -1,5 +1,6 @@
 package com.example.administrator.onetotwo.main.widget;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
@@ -40,5 +41,15 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onDestroy();
         ActivityCollector.removeActivity(this);
         RxUtils.getInstance().unSubscription();
+    }
+
+    protected void toAcitivty(Class t){
+        startActivity(new Intent(this,t));
+    }
+
+    protected void toActivityForResult(Bundle bundle,Class t,int requst_code){
+        Intent intent = new Intent(this,t);
+        intent.putExtras(bundle);
+        startActivityForResult(intent,requst_code);
     }
 }

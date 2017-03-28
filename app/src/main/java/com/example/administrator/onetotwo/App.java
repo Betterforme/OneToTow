@@ -10,6 +10,7 @@ import com.example.administrator.onetotwo.main.generator.DaoSession;
 import com.example.administrator.onetotwo.main.utils.SQLiteOpenHelper;
 
 import cn.bmob.v3.Bmob;
+import top.wefor.circularanim.CircularAnim;
 
 /**
  * Created by SJ on 2016/11/8.
@@ -27,6 +28,7 @@ public class App extends Application {
         application = this;
         Bmob.initialize(this, "256324b5789d783a4bc0c5af44d84887");
         setupDatabase();
+        CircularAnim.init(700, 500, R.color.colorPrimary);
         //第二：自v3.4.7版本开始,设置BmobConfig,允许设置请求超时时间、文件分片上传时每片的大小、文件的过期时间(单位为秒)，
         //BmobConfig config =new BmobConfig.Builder(this)
         ////设置appkey

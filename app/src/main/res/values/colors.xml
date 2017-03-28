@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="baseGreen">#4dcf19</color>
+    <color name="baseDarkGreen">#3a3658</color>
+
     <color name="baseWhite">#ffffff</color>
     <color name="baseWhite_7f">#7fffffff</color>
     <color name="baseWhite_af">#afffffff</color>
@@ -14,5 +16,8 @@
     <color name="base_grey">#f1f1f1</color>
     <color name="base_font_grey">#474747</color>
     <color name="base_hint_font_grey">#919191</color>
+    <color name="base_dark_pink">#8f6cb4</color>
+    <color name="base_pink">#df68e6</color>
+    <color name="base_pink_3f">#3fdf68e6</color>
 
 </resources>

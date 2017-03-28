@@ -41,10 +41,10 @@ public class ActivityUtils {
 
     public static void openKeyboard(@NonNull final EditText editText) {
         if (!detectKeyboard(editText)) {
-            editText.post(() -> {
-                InputMethodManager imm = (InputMethodManager) editText.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
-                imm.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT);
-            });
+//            editText.post(() -> {
+//                InputMethodManager imm = (InputMethodManager) editText.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+//                imm.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT);
+//            });
         }
     }
 

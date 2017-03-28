@@ -26,7 +26,7 @@ public class ActivityCollector {
 
     public static void removeAllActivity() {
 
-        list.stream().filter(activity -> !activity.isFinishing()).forEach(Activity::finish);
+//        list.stream().filter(activity -> !activity.isFinishing()).forEach(Activity::finish);
     }
 
 }

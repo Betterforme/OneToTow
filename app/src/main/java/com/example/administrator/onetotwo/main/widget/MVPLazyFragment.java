@@ -81,7 +81,6 @@ public abstract class MVPLazyFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
         RxUtils.getInstance().unSubscription();
     }
 }

@@ -23,7 +23,7 @@ public class LoginModelImpl implements BaseModle.Login{
      * @param loginPresenter
      */
     @Override
-    public void login(String username, String secret, LoginPresenterImpl loginPresenter) {
+    public void login(String username, String secret, final LoginPresenterImpl loginPresenter) {
         BmobUser.loginByAccount(username, secret, new LogInListener<User>() {
             @Override
             public void done(User user, BmobException e) {

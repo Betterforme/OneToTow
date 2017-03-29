@@ -19,5 +19,6 @@
     <color name="base_dark_pink">#8f6cb4</color>
     <color name="base_pink">#df68e6</color>
     <color name="base_pink_3f">#3fdf68e6</color>
+    <color name="water">#959595</color>
 
 </resources>

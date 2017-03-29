@@ -1,5 +1,6 @@
 package com.example.administrator.onetotwo.main.activity;
 
+import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -10,14 +11,22 @@ import android.widget.TextView;
 import com.example.administrator.onetotwo.R;
 import com.example.administrator.onetotwo.main.mvp.presenter.LoginPresenterImpl;
 import com.example.administrator.onetotwo.main.mvp.view.LoginView;
+import com.example.administrator.onetotwo.main.ui.SpinnerLoader;
 import com.example.administrator.onetotwo.main.widget.BaseActivity;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 import top.wefor.circularanim.CircularAnim;
 
 public class LoginActivity extends BaseActivity implements LoginView {
 
+    @BindView(R.id.sl_loading)
+    SpinnerLoader slLoading;
+    @BindView(R.id.iv_white)
+    ImageView ivWhite;
+    @BindView(R.id.iv_right)
+    ImageView ivRight;
     private LoginPresenterImpl loginPresenter;
 
     @BindView(R.id.tv_lable)
@@ -91,7 +100,10 @@ public class LoginActivity extends BaseActivity implements LoginView {
                 break;
             case R.id.rl_login:
                 loginPresenter = new LoginPresenterImpl(this);
-                loginPresenter.login("liuyu","497045289@qq.com");
+                loginPresenter.login("liuyu", "497045289@qq.com");
+                slLoading.setVisibility(View.VISIBLE);
+                ivRight.setVisibility(View.INVISIBLE);
+                ivWhite.setVisibility(View.INVISIBLE);
                 break;
             case R.id.rl_about_us:
                 break;
@@ -100,7 +112,7 @@ public class LoginActivity extends BaseActivity implements LoginView {
         }
     }
 
-    private void toMainActivity(View v){
+    private void toMainActivity(View v) {
         CircularAnim.fullActivity(LoginActivity.this, v)
                 .colorOrImageRes(R.color.colorPrimary)
                 .go(new CircularAnim.OnAnimationEndListener() {
@@ -111,4 +123,10 @@ public class LoginActivity extends BaseActivity implements LoginView {
                 });
     }
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // TODO: add setContentView(...) invocation
+        ButterKnife.bind(this);
+    }
 }
